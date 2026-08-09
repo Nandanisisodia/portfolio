@@ -109,7 +109,7 @@ export const projectsData = [
     tags: ["React.js", "Node.js", "Express.js", "PostgreSQL", "Framer Motion"],
     github: "https://github.com/Nandanisisodia/learnify-website",
     live: "https://learnify-website.vercel.app",
-    image: "assets/images/learnify-screenshot.png"
+    image: "assets/images/Learnify.png"
   },
   {
     name: "ResumePro",
@@ -118,7 +118,7 @@ export const projectsData = [
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
     github: "https://github.com/Nandanisisodia/resumepro",
     live: null,
-    image: "assets/images/resumepro-screenshot.png"
+    image: "assets/images/resumepro.png"
   }
 ];
 

@@ -58,8 +58,8 @@ nandani-portfolio/
 │       └── scrollReveal.js       # Fade-in-on-scroll behaviour shared across sections
 ├── assets/
 │   └── images/
-│       ├── learnify-screenshot.png
-│       └── resumepro-screenshot.png
+│       ├── Learnify.png
+│       └── resumepro.png
 ├── resume.pdf                    # Downloadable resume (add your own)
 └── README.md
 ```
