@@ -1,0 +1,12 @@
+.education{padding:90px 0;border-top:1px solid var(--border);}
+  .edu-list{display:flex;flex-direction:column;gap:14px;}
+  .edu-item{
+    display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;
+    background:var(--bg-elev);border:1px solid var(--border);border-radius:var(--radius-md);
+    padding:22px 26px;
+  }
+  .edu-item__left h3{font-size:16px;margin-bottom:5px;}
+  .edu-item__left .school{color:var(--text-dim);font-size:13.5px;}
+  .edu-item__right{text-align:right;font-family:var(--font-mono);}
+  .edu-item__right .score{color:var(--accent);font-weight:600;font-size:15px;}
+  .edu-item__right .yr{color:var(--text-dimmer);font-size:12px;margin-top:3px;}

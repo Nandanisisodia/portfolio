@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nandani Sisodia — Full-Stack Developer</title>
+<meta name="description" content="Portfolio of Nandani Sisodia, Full-Stack Software Engineer specializing in React, Node.js and ASP.NET Core.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components/loader.css">
+<link rel="stylesheet" href="css/components/navbar.css">
+<link rel="stylesheet" href="css/components/hero.css">
+<link rel="stylesheet" href="css/components/skills.css">
+<link rel="stylesheet" href="css/components/experience.css">
+<link rel="stylesheet" href="css/components/projects.css">
+<link rel="stylesheet" href="css/components/leetcode.css">
+<link rel="stylesheet" href="css/components/education.css">
+<link rel="stylesheet" href="css/components/contact.css">
+<link rel="stylesheet" href="css/components/footer.css">
+</head>
+<body class="no-scroll">
+
+  <!-- ===================== LOADER ===================== -->
+  <div class="loader" id="loader">
+    <button class="loader__skip" id="skipBtn">skip →</button>
+    <div class="loader__card">
+      <div class="loader__titlebar">
+        <span class="loader__dot"></span><span class="loader__dot"></span><span class="loader__dot"></span>
+        <span class="loader__filename">boot.sh — nandani-portfolio</span>
+      </div>
+      <div class="loader__body">
+        <div class="loader__joke-comment">// dev humor</div>
+        <div class="loader__joke-q" id="jokeQ"></div>
+        <div class="loader__joke-a" id="jokeA"></div>
+        <div class="loader__log" id="loaderLog">
+          <div class="loader__log-line" data-line>
+            <span><span class="loader__prompt">$</span> nandani init --portfolio</span>
+          </div>
+          <div class="loader__log-line" data-line>
+            <span>scaffolding components...</span><span class="loader__log-check">✓</span>
+          </div>
+          <div class="loader__log-line" data-line>
+            <span>compiling assets...</span><span class="loader__log-check">✓</span>
+          </div>
+          <div class="loader__log-line" data-line>
+            <span>fetching leetcode stats...</span><span class="loader__log-check">✓</span>
+          </div>
+          <div class="loader__log-line" data-line>
+            <span>deploying to production...</span><span class="loader__log-check">✓</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="nav" id="mainNav">
+    <div class="nav__inner">
+      <div class="nav__links" id="navLinks">
+        <a href="#home" class="nav__link" data-nav>Home</a>
+        <a href="#skills" class="nav__link" data-nav>Skills</a>
+        <a href="#experience" class="nav__link" data-nav>Experience</a>
+        <a href="#projects" class="nav__link" data-nav>Projects</a>
+        <a href="#leetcode" class="nav__link" data-nav>LeetCode</a>
+        <a href="#education" class="nav__link" data-nav>Education</a>
+        <a href="#contact" class="nav__link" data-nav>Contact</a>
+      </div>
+      <button class="nav__burger" id="burgerBtn" aria-label="Toggle menu"><span></span></button>
+      <div class="nav__mobile-panel" id="mobilePanel">
+        <a href="#home" class="nav__link" data-nav>Home</a>
+        <a href="#skills" class="nav__link" data-nav>Skills</a>
+        <a href="#experience" class="nav__link" data-nav>Experience</a>
+        <a href="#projects" class="nav__link" data-nav>Projects</a>
+        <a href="#leetcode" class="nav__link" data-nav>LeetCode</a>
+        <a href="#education" class="nav__link" data-nav>Education</a>
+        <a href="#contact" class="nav__link" data-nav>Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <div class="eyebrow">Hi, I'm Nandani Sisodia</div>
+        <h1 class="hero__role">Full-Stack Software <span>Engineer</span></h1>
+        <p class="hero__summary">
+          Computer Science graduate who builds scalable, production-ready software across the stack —
+          from React interfaces to ASP.NET Core &amp; Node.js APIs backed by SQL Server, PostgreSQL and MongoDB.
+          Currently seeking Software Engineer roles where I can ship real features, not just prototypes.
+        </p>
+        <div class="hero__actions">
+          <a href="resume.pdf" download class="btn btn--primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+            Download Resume
+          </a>
+          <a href="#projects" class="btn btn--ghost">View Projects</a>
+        </div>
+        <div class="hero__meta">
+          <div class="hero__meta-item"><b>2</b> internships</div>
+          <div class="hero__meta-item"><b>2</b> full-stack projects shipped</div>
+          <div class="hero__meta-item"><b>231+</b> LeetCode problems solved</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="code-card">
+          <div class="code-card__bar">
+            <span class="loader__dot"></span><span class="loader__dot"></span><span class="loader__dot"></span>
+            <span class="code-card__filename">nandani.dev.ts</span>
+          </div>
+          <div class="code-card__body">
+            <div class="code-line"><span class="code-ln">1</span><span><span class="tok-key">const</span> <span class="tok-var">developer</span> <span class="tok-punc">=</span> <span class="tok-punc">{</span></span></div>
+            <div class="code-line"><span class="code-ln">2</span><span>&nbsp;&nbsp;<span class="tok-prop">name</span><span class="tok-punc">:</span> <span class="tok-str">"Nandani Sisodia"</span><span class="tok-punc">,</span></span></div>
+            <div class="code-line"><span class="code-ln">3</span><span>&nbsp;&nbsp;<span class="tok-prop">role</span><span class="tok-punc">:</span> <span class="tok-str">"Full-Stack Engineer"</span><span class="tok-punc">,</span></span></div>
+            <div class="code-line"><span class="code-ln">4</span><span>&nbsp;&nbsp;<span class="tok-prop">stack</span><span class="tok-punc">:</span> <span class="tok-punc">[</span><span class="tok-str">"React"</span><span class="tok-punc">,</span> <span class="tok-str">"Node"</span><span class="tok-punc">,</span> <span class="tok-str">"ASP.NET"</span><span class="tok-punc">],</span></span></div>
+            <div class="code-line"><span class="code-ln">5</span><span>&nbsp;&nbsp;<span class="tok-prop">learning</span><span class="tok-punc">:</span> <span class="tok-key">true</span><span class="tok-punc">,</span></span></div>
+            <div class="code-line"><span class="code-ln">6</span><span>&nbsp;&nbsp;<span class="tok-fn">isHireable</span><span class="tok-punc">()</span> <span class="tok-punc">{</span></span></div>
+            <div class="code-line"><span class="code-ln">7</span><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tok-key">return</span> <span class="tok-key">true</span><span class="tok-punc">;</span></span></div>
+            <div class="code-line"><span class="code-ln">8</span><span>&nbsp;&nbsp;<span class="tok-punc">}</span></span></div>
+            <div class="code-line"><span class="code-ln">9</span><span><span class="tok-punc">};</span><span class="loader__cursor"></span></span></div>
+          </div>
+        </div>
+        <div class="hero__badge"><span class="dot-live"></span> Available for Software Engineer roles</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">What I work with</div>
+        <h2>Skills &amp; Technologies</h2>
+        <p>The languages, frameworks and tools I use to take a product from idea to production.</p>
+      </div>
+      <div class="skills__grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" class="experience">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Where I've worked</div>
+        <h2>Professional Experience</h2>
+        <p>Hands-on internship experience building real, production-facing features.</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="projects">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">What I've built</div>
+        <h2>Featured Projects</h2>
+        <p>Full-stack applications built end-to-end — UI, APIs, database and auth.</p>
+      </div>
+      <div class="projects__grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== LEETCODE ===================== -->
+  <section id="leetcode" class="leetcode">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Problem solving</div>
+        <h2>Live LeetCode Progress</h2>
+        <p>Pulled live from my LeetCode profile — because talk is cheap, submissions aren't.</p>
+      </div>
+
+      <div class="leet-card reveal">
+        <div class="leet-card__top">
+          <div class="leet-card__title">
+            <div class="leet-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+            </div>
+            <div>
+              <h3>LeetCode Progress</h3>
+              <div class="sub">@Nandani_Sisodia_525 · Problem Solving Stats</div>
+            </div>
+          </div>
+          <div class="leet-actions">
+            <span class="leet-status-pill" id="leetStatusPill"><span class="dot-live"></span> live</span>
+            <button class="leet-btn" id="leetRefreshBtn">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 4v6h-6M1 20v-6h6M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+              Refresh
+            </button>
+            <a href="https://leetcode.com/u/Nandani_Sisodia_525/" target="_blank" rel="noopener" class="leet-btn">Profile →</a>
+          </div>
+        </div>
+
+        <div class="leet-note" id="leetNote">Using fallback data — live stats may be limited by the browser's connection to LeetCode.</div>
+
+        <div class="leet-main">
+          <div class="leet-ring-card">
+            <div class="leet-ring-wrap">
+              <svg viewBox="0 0 160 160">
+                <circle cx="80" cy="80" r="68" fill="none" stroke="#1a1e2c" stroke-width="14"/>
+                <circle id="ringHard" cx="80" cy="80" r="68" fill="none" stroke="#ef6f6f" stroke-width="14" stroke-linecap="round" stroke-dasharray="427" stroke-dashoffset="427"/>
+                <circle id="ringMedium" cx="80" cy="80" r="68" fill="none" stroke="#f5b95c" stroke-width="14" stroke-linecap="round" stroke-dasharray="427" stroke-dashoffset="427"/>
+                <circle id="ringEasy" cx="80" cy="80" r="68" fill="none" stroke="#5ecf9a" stroke-width="14" stroke-linecap="round" stroke-dasharray="427" stroke-dashoffset="427"/>
+              </svg>
+              <div class="leet-ring-center">
+                <div class="num" id="leetTotalNum">—</div>
+                <div class="lbl">Solved</div>
+              </div>
+            </div>
+            <div class="leet-legend">
+              <div class="leet-legend-item"><i style="background:#5ecf9a"></i>Easy</div>
+              <div class="leet-legend-item"><i style="background:#f5b95c"></i>Medium</div>
+              <div class="leet-legend-item"><i style="background:#ef6f6f"></i>Hard</div>
+            </div>
+          </div>
+
+          <div class="leet-breakdown-card">
+            <h4>Problem Breakdown</h4>
+            <div class="sub">Progress by difficulty</div>
+            <div class="leet-bar-row">
+              <div class="leet-bar-row__head">
+                <span class="name"><i style="background:#5ecf9a"></i>Easy</span>
+                <span class="val" id="easyVal">— / —</span>
+              </div>
+              <div class="leet-bar-track"><div class="leet-bar-fill" id="easyBar" style="background:#5ecf9a"></div></div>
+            </div>
+            <div class="leet-bar-row">
+              <div class="leet-bar-row__head">
+                <span class="name"><i style="background:#f5b95c"></i>Medium</span>
+                <span class="val" id="medVal">— / —</span>
+              </div>
+              <div class="leet-bar-track"><div class="leet-bar-fill" id="medBar" style="background:#f5b95c"></div></div>
+            </div>
+            <div class="leet-bar-row">
+              <div class="leet-bar-row__head">
+                <span class="name"><i style="background:#ef6f6f"></i>Hard</span>
+                <span class="val" id="hardVal">— / —</span>
+              </div>
+              <div class="leet-bar-track"><div class="leet-bar-fill" id="hardBar" style="background:#ef6f6f"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="leet-stats-row">
+          <div class="leet-stat"><div class="v" id="statRank">—</div><div class="l">Global Rank</div></div>
+          <div class="leet-stat"><div class="v" id="statAccept">—</div><div class="l">Acceptance</div></div>
+          <div class="leet-stat"><div class="v" id="statTotal">—</div><div class="l">Total Solved</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION ===================== -->
+  <section id="education" class="education">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div class="eyebrow">Academic background</div>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-list" id="eduList"></div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <div class="eyebrow" style="justify-content:center;">Get in touch</div>
+      <h2>Let's build something together.</h2>
+      <p>Open to Software Engineer roles and full-stack opportunities — feel free to reach out.</p>
+      <div class="contact__links">
+        <a class="contact-link" href="mailto:nandanisisodia525@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+          nandanisisodia525@gmail.com
+        </a>
+        <a class="contact-link" href="https://linkedin.com/in/nandani-sisodia-928077338" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a class="contact-link" href="https://github.com/Nandanisisodia" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2026 Nandani Sisodia · Built with React, Node.js &amp; a lot of ☕
+  </footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+.projects{padding:90px 0;border-top:1px solid var(--border);}
+  .projects__grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .project-card{
+    background:var(--bg-elev);border:1px solid var(--border);border-radius:var(--radius-lg);
+    overflow:hidden;display:flex;flex-direction:column;
+    transition:border-color .25s ease, transform .25s ease;
+  }
+  .project-card:hover{border-color:#323a52;transform:translateY(-4px);}
+  .project-card__shot{
+    height:190px;position:relative;overflow:hidden;
+    display:flex;align-items:center;justify-content:center;
+    border-bottom:1px solid var(--border);
+  }
+  .project-card__shot .mock-browser{
+    width:88%;background:var(--bg-elev-2);border-radius:8px;overflow:hidden;border:1px solid var(--border);
+  }
+  .project-card__shot img{
+    width:100%;height:100%;object-fit:cover;object-position:top;
+    transition:transform .4s ease;
+  }
+  .project-card:hover .project-card__shot img{transform:scale(1.04);}
+  .mock-browser__bar{display:flex;gap:5px;padding:8px 10px;background:#161a26;}
+  .mock-browser__bar span{width:6px;height:6px;border-radius:50%;background:#333a4d;}
+  .mock-browser__body{padding:16px;}
+  .mock-browser__block{height:8px;border-radius:4px;background:linear-gradient(90deg,var(--accent-soft),transparent);margin-bottom:8px;}
+  .mock-browser__block:nth-child(2){width:70%;}
+  .mock-browser__block:nth-child(3){width:85%;}
+  .mock-browser__block:nth-child(4){width:50%;background:linear-gradient(90deg,var(--accent-2-soft),transparent);}
+  .project-card__body{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1;}
+  .project-card__title{font-size:19px;margin-bottom:8px;display:flex;align-items:center;gap:10px;}
+  .project-card__status{
+    font-family:var(--font-mono);font-size:10.5px;letter-spacing:0.05em;
+    padding:3px 9px;border-radius:100px;text-transform:uppercase;
+  }
+  .project-card__status--live{color:var(--success);background:var(--success-soft);}
+  .project-card__status--wip{color:var(--accent-2);background:var(--accent-2-soft);}
+  .project-card__desc{color:var(--text-dim);font-size:14.5px;margin-bottom:18px;flex:1;}
+  .project-card__tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px;}
+  .project-card__links{display:flex;gap:12px;flex-wrap:wrap;}
+  .project-card__links .btn{padding:10px 18px;font-size:12.5px;}
+  .btn--disabled{opacity:0.45;pointer-events:none;}
+
+  @media (max-width:800px){.projects__grid{grid-template-columns:1fr;}}
