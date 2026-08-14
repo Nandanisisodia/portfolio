@@ -12,6 +12,9 @@ export const skillsData = [
       { name: "JavaScript", color: "#f0db4f" },
       { name: "TypeScript", color: "#3178c6" },
       { name: "C#", color: "#a179dc" },
+      { name: "SQL", color: "#e38c00" },
+      { name: "HTML5", color: "#e34f26" },
+      { name: "CSS3", color: "#2965f1" },
     ]
   },
   {
@@ -19,12 +22,11 @@ export const skillsData = [
     desc: "Building interfaces that feel fast and clean.",
     items: [
       { name: "React.js", color: "#61dafb" },
-      { name: "HTML5", color: "#e34f26" },
-      { name: "CSS3", color: "#2965f1" },
-      { name: "React Router", color: "#ca4245" },
       { name: "Redux", color: "#764abc" },
-      { name: "Vite", color: "#ffca28" },
       { name: "Tailwind CSS", color: "#38bdf8" },
+      { name: "React Router", color: "#ca4245" },
+      { name: "Vite", color: "#ffca28" },
+      { name: "Responsive Web Design", color: "#22c1c3" },
     ]
   },
   {
@@ -34,8 +36,8 @@ export const skillsData = [
       { name: "Node.js", color: "#68a063" },
       { name: "Express.js", color: "#8f8f8f" },
       { name: "ASP.NET Core", color: "#8a2be2" },
-      { name: "REST APIs", color: "#f5b95c" },
-      { name: "JWT Auth", color: "#e94e77" },
+      { name: "RESTful API Design", color: "#f5b95c" },
+      { name: "JWT / bcrypt Auth", color: "#e94e77" },
     ]
   },
   {
@@ -49,25 +51,39 @@ export const skillsData = [
     ]
   },
   {
-    title: "Tools",
+    title: "Tools & Platforms",
     desc: "Build it, test it, ship it.",
     items: [
       { name: "Git", color: "#f05032" },
       { name: "GitHub", color: "#8b92a8" },
+      { name: "Vercel", color: "#e9e9e9" },
+      { name: "Render", color: "#6cc7a1" },
       { name: "VS Code", color: "#007acc" },
       { name: "Postman", color: "#ff6c37" },
-      { name: "Axios", color: "#5a29e4" },
     ]
   },
   {
-    title: "Core CS",
+    title: "AI & CLI Tooling",
+    desc: "Shipping faster by pairing with AI-native dev tools.",
+    items: [
+      { name: "Claude Code CLI", color: "#d97757" },
+      { name: "Gemini CLI", color: "#8ab4f8" },
+      { name: "Groq Llama 3.3 API", color: "#f55036" },
+      { name: "Antigravity", color: "#7c8cff" },
+      { name: "Codex", color: "#5ecf9a" },
+    ]
+  },
+  {
+    title: "Core CS & Concepts",
     desc: "Fundamentals every solid engineer leans on.",
     items: [
       { name: "DSA", color: "#7c8cff" },
       { name: "OOP", color: "#5ecf9a" },
       { name: "DBMS", color: "#f5b95c" },
-      { name: "Computer Networks", color: "#ef6f6f" },
-      { name: "System Design Basics", color: "#82aaff" },
+      { name: "MERN Stack", color: "#61dafb" },
+      { name: "CRUD Architecture", color: "#82aaff" },
+      { name: "Role-Based Access Control", color: "#ef6f6f" },
+      { name: "Agile Collaboration", color: "#c792ea" },
     ]
   }
 ];
@@ -79,13 +95,13 @@ export const experienceData = [
     location: "Gurugram",
     period: "Feb 2026 — Jun 2026",
     bullets: [
-      "Developed ERP modules end-to-end using React.js, C# and ASP.NET Core, backed by SQL Server.",
-      "Built and integrated RESTful APIs to enable seamless communication between frontend and backend.",
-      "Optimized SQL Server queries, improving overall database performance by ~20%.",
-      "Collaborated with senior developers to debug production issues and improve application stability.",
-      "Reduced manual data-entry errors by ~30% by automating key ERP workflows."
+      "Developed ERP modules using React.js, C#, ASP.NET Core and SQL Server for core business workflows.",
+      "Built and integrated RESTful APIs enabling seamless communication between frontend and backend systems.",
+      "Optimized SQL Server queries, improving database performance by 20%.",
+      "Reduced manual data-entry errors by ~30% by implementing automated ERP workflows.",
+      "Collaborated with senior developers to debug production issues and improve application stability."
     ],
-    tags: ["React.js", "C#", "ASP.NET Core", "SQL Server", "REST APIs"]
+    tags: ["React.js", "C#", "ASP.NET Core", "SQL Server", "RESTful APIs"]
   },
   {
     role: "Web Development Intern",
@@ -95,7 +111,7 @@ export const experienceData = [
     bullets: [
       "Developed responsive Admin and Candidate dashboards using React.js and reusable UI components.",
       "Integrated REST APIs for real-time student management and progress tracking.",
-      "Improved frontend performance by optimizing component rendering, cutting page load time by ~25%."
+      "Improved frontend performance by optimizing component rendering, cutting page load time by 25%."
     ],
     tags: ["React.js", "REST APIs", "JavaScript", "CSS3"]
   }
@@ -105,16 +121,25 @@ export const projectsData = [
   {
     name: "Learnify",
     status: "live",
-    desc: "A full-stack interview preparation platform with dedicated HR and Candidate dashboards, animated charts and secure REST APIs.",
-    tags: ["React.js", "Node.js", "Express.js", "PostgreSQL", "Framer Motion"],
+    desc: "A full-stack HR assessment & learning platform with role-based authentication, a rule-based HR-answer scoring engine (keyword matching, STAR-method detection), and a 12+ module Admin Panel backed by a 16-table PostgreSQL schema.",
+    tags: ["React.js", "Node.js", "Express.js", "PostgreSQL", "bcrypt"],
     github: "https://github.com/Nandanisisodia/learnify-website",
     live: "https://learnify-website.vercel.app",
     image: "assets/images/Learnify.png"
   },
   {
+    name: "DishGPT",
+    status: "wip",
+    desc: "An AI-powered recipe recommendation platform built on Groq's Llama 3.3 API with structured JSON-mode prompting, a real-time ingredient-matching engine, and a 3-tier fallback system (AI-first, curated database, offline cache) for graceful degradation.",
+    tags: ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Groq Llama 3.3 API", "JWT"],
+    github: "https://github.com/Nandanisisodia/dishGPT",
+    live: null,
+    image: "assets/images/DishGPT.png"
+  },
+  {
     name: "ResumePro",
     status: "wip",
-    desc: "A full-stack resume builder with JWT-based authentication, protected routes, and dynamic resume generation.",
+    desc: "A full-stack resume builder supporting 3 templates (2 ATS-optimized) with a dynamic multi-section editor, real-time live preview, and dual PDF export pipelines — styled client-side rendering plus a jsPDF text-based ATS-compliant export.",
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
     github: "https://github.com/Nandanisisodia/resumepro",
     live: null,

@@ -59,6 +59,7 @@ nandani-portfolio/
 ├── assets/
 │   └── images/
 │       ├── Learnify.png
+│       ├── DishGPT.png
 │       └── resumepro.png
 ├── resume.pdf                    # Downloadable resume (add your own)
 └── README.md
@@ -84,6 +85,11 @@ No build step or dependencies required — it's plain HTML/CSS/JS.
 
 This site is deployed for free on [Vercel](https://vercel.com) — connected directly to this GitHub repository so every push automatically redeploys.
 
+## Content Updates
+
+- **Resume:** replace `resume.pdf` in the root folder with an updated version (same filename).
+- **Project screenshots:** replace files inside `assets/images/`.
+- **Skills / experience / projects / education content:** edit the arrays in `js/data.js` — no HTML editing required.
 
 ## Author
 
