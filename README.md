@@ -60,6 +60,7 @@ nandani-portfolio/
 │   └── images/
 │       ├── Learnify.png
 │       ├── DishGPT.png
+│       ├── GenAIKnowledgeBase.png
 │       └── resumepro.png
 ├── resume.pdf                    # Downloadable resume (add your own)
 └── README.md

@@ -36,8 +36,20 @@ export const skillsData = [
       { name: "Node.js", color: "#68a063" },
       { name: "Express.js", color: "#8f8f8f" },
       { name: "ASP.NET Core", color: "#8a2be2" },
+      { name: "FastAPI", color: "#009688" },
       { name: "RESTful API Design", color: "#f5b95c" },
       { name: "JWT / bcrypt Auth", color: "#e94e77" },
+    ]
+  },
+  {
+    title: "AI / ML",
+    desc: "Building applications that reason over real data.",
+    items: [
+      { name: "RAG Pipelines", color: "#f55036" },
+      { name: "LLM Integration (Groq)", color: "#7c8cff" },
+      { name: "FAISS Vector Search", color: "#82aaff" },
+      { name: "Sentence-Transformers", color: "#c792ea" },
+      { name: "PyPDF", color: "#e34f26" },
     ]
   },
   {
@@ -58,6 +70,7 @@ export const skillsData = [
       { name: "GitHub", color: "#8b92a8" },
       { name: "Vercel", color: "#e9e9e9" },
       { name: "Render", color: "#6cc7a1" },
+      { name: "Docker", color: "#2496ed" },
       { name: "VS Code", color: "#007acc" },
       { name: "Postman", color: "#ff6c37" },
     ]
@@ -135,6 +148,15 @@ export const projectsData = [
     github: "https://github.com/Nandanisisodia/dishGPT",
     live: null,
     image: "assets/images/DishGPT.png"
+  },
+  {
+    name: "GenAI Knowledge Base API",
+    status: "wip",
+    desc: "A production-grade RAG (Retrieval-Augmented Generation) pipeline with a FastAPI backend and a React (Vite) frontend — upload multiple PDFs and ask natural-language questions answered with source citations, backed by a persistent FAISS vector index and local sentence-transformer embeddings.",
+    tags: ["FastAPI", "React (Vite)", "FAISS", "Groq LLM", "Sentence-Transformers"],
+    github: "https://github.com/Nandanisisodia/genAI-knowledge-base",
+    live: null,
+    image: "assets/images/GenAIKnowledgeBase.png"
   },
   {
     name: "ResumePro",
