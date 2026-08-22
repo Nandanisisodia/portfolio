@@ -142,11 +142,11 @@ export const projectsData = [
   },
   {
     name: "DishGPT",
-    status: "wip",
+    status: "live",
     desc: "An AI-powered recipe recommendation platform built on Groq's Llama 3.3 API with structured JSON-mode prompting, a real-time ingredient-matching engine, and a 3-tier fallback system (AI-first, curated database, offline cache) for graceful degradation.",
     tags: ["React", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Groq Llama 3.3 API", "JWT"],
     github: "https://github.com/Nandanisisodia/dishGPT",
-    live: null,
+    live: "https://dish-gpt-tau.vercel.app/",
     image: "assets/images/DishGPT.png"
   },
   {
@@ -160,11 +160,11 @@ export const projectsData = [
   },
   {
     name: "ResumePro",
-    status: "wip",
+    status: "live",
     desc: "A full-stack resume builder supporting 3 templates (2 ATS-optimized) with a dynamic multi-section editor, real-time live preview, and dual PDF export pipelines — styled client-side rendering plus a jsPDF text-based ATS-compliant export.",
     tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
     github: "https://github.com/Nandanisisodia/resumepro",
-    live: null,
+    live: "https://resumepro-nandani.vercel.app/",
     image: "assets/images/resumepro.png"
   }
 ];
